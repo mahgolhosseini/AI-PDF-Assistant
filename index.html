@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI PDF Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <img class="pic" src="capture.png" alt="AI PDF Assistant">
+
+            <div class="header-text">
+                <h1>AI PDF Assistant</h1>
+                <p>Smart AI for your PDFs</p>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="upload-section">
+                <h2>Upload PDF</h2>
+                <p>Select a PDF to start</p>
+                <input type="file" id="pdf-upload" accept=".pdf">
+            </section>
+
+            <section class="pdf-info">
+                <h2>Uploaded Document</h2>
+                <p id="file-name">No file selected</p>
+                <p id="status">Waiting for upload</p>
+            </section>
+
+            <section class="suggestions">
+                <h2>Suggested Questions</h2>
+
+                <button id="summarize-btn">
+                    Summarize this document
+                </button>
+
+                <button id="topic-btn">
+                    What is the main topic?
+                </button>
+            </section>
+
+            <section class="chat-section">
+                <h2>Chat</h2>
+
+                <div class="chat-container">
+
+                    <div class="ai-message">
+                        <p>
+                            Hello! Upload a PDF and ask me anything about it.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="message-input">
+
+                <input
+                    type="text"
+                    id="question"
+                    placeholder="Ask a question about your PDF..."
+                >
+
+                <button id="send-btn">
+                    Send
+                </button>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
