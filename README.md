@@ -7,24 +7,24 @@ A web-based AI application that allows users to upload PDF documents, ask questi
 
 ## 🚀 Features
 
-- Upload and read PDF documents
+- Upload PDF documents
 - Extract text from PDF files
 - Ask questions about the uploaded document
-- Generate a summary of the document
+- Generate AI-powered summaries
 - Identify the main topic of the document
-- Display AI-generated answers in a chat interface
 - Download the generated summary as a PDF
-- Responsive and user-friendly interface
+- Responsive layout for mobile and desktop
+- Clean and user-friendly interface
 
 ## 💻 Technologies Used
 
 - HTML5
-- CSS3
+- CSS3 (Flexbox, Grid)
 - JavaScript (ES6)
 - PDF.js for PDF text extraction
-- Google Gemini API for AI-powered responses
-- Fetch API for API communication
-- jsPDF for generating downloadable PDF summaries
+- jsPDF for generating PDF summaries
+- Google Gemini API for AI responses
+- Cloudflare Workers for secure API communication
 
 ## 🌐 Live Demo
 
